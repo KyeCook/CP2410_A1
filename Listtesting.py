@@ -4,7 +4,7 @@ import random
 for q in range(3,9):
     print("")
     n = 10**q
-    print("n: " + n)
+    print("n: " + str(n))
     array = [None]*n
     Ms = []
     for f in range(0,q):
@@ -14,7 +14,7 @@ for q in range(3,9):
     #         todo speak about how f must be under < 8 as **9 and above = 1 billion and python cant handle
 
     for m in Ms:
-        print("m: " + m)
+        print("m: " + str(m))
         for o in range(1, m):
             numer = random.randint(0, n - 1)
             array[numer] = 3
