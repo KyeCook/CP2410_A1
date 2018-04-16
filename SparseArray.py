@@ -25,19 +25,19 @@ class SparseArray(object):
 
     def __setitem__(self, j, e):
         i = self.find_index(j)
-        new_node = Node(e, i, self.root)
-        self.root = new_node
+        newNode = Node(e, i, self.root)
+        self.root = newNode
         self.use += 1
 
 
     def __getitem__(self, j):
         i = self.find_index(j)
-        this_node = self.root
-        while this_node is not None:
-            if this_node.get_index() == i:
-                return this_node.element
+        currentNode = self.root
+        while currentNode is not None:
+            if currentNode.get_index() == i:
+                return currentNode.element
             else:
-                this_node = this_node.get_next()
+                currentNode = currentNode.get_next()
         return None
 
     def fill(self, seq):
@@ -64,10 +64,10 @@ class SparseArray(object):
 
     def print_list(self):
         print("Sparse Array:")
-        this_node = self.root
-        while this_node.has_next():
-            print(this_node.to_string())
-            this_node = this_node.get_next()
+        currentNode = self.root
+        while currentNode.has_next():
+            print(currentNode.to_string())
+            currentNode = currentNode.get_next()
 
 ## ******* Testing for sample output ********* ##
 

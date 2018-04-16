@@ -5,10 +5,10 @@ class Node(object):
         # node index value for node
         self.index = i
         # Linked List pointer value for node
-        self.next_node = n
+        self.nextNode = n
 
     def get_next(self):
-       return self.next_node
+       return self.nextNode
 
     def get_data(self):
         return self.element
