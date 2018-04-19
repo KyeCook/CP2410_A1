@@ -6,6 +6,8 @@ Implementation of Sparse Arrays and Linked Lists
 from ArrayNode import Node # Import functionality of Node Class
 
 ## Functionality of Sparse Array class ##
+
+
 class SparseArray(object):
 
     def __init__(self, n, r=None):
@@ -28,7 +30,6 @@ class SparseArray(object):
         newNode = Node(e, i, self.root)
         self.root = newNode
         self.use += 1
-
 
     def __getitem__(self, j):
         i = self.find_index(j)

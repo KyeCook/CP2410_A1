@@ -1,3 +1,12 @@
+"""
+Implementation of testing the functions contained within SparseArray.
+
+Sets/gets elements from SparseArray with varying sizes, values of n and a changing number of non-empty elements.
+
+**** NB MemoryError prevents tests > m^9  ****
+"""
+
+
 from SparseArray import SparseArray
 import random
 from time import clock

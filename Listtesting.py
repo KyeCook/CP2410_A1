@@ -1,3 +1,10 @@
+"""
+Used for testing the execution of the list equivalent of the get and set methods.
+
+**** NB MemoryError prevents tests > m^9  ****
+"""
+
+
 from time import clock
 import random
 

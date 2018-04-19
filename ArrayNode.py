@@ -1,3 +1,10 @@
+"""
+Node implementation
+
+Allows for creation of nodes from the Sparse Array allowing for a Linked List to be created
+"""
+
+
 class Node(object):
     def __init__(self, d=None, i=None, n=None):
         # element value for node
@@ -8,7 +15,7 @@ class Node(object):
         self.nextNode = n
 
     def get_next(self):
-       return self.nextNode
+        return self.nextNode
 
     def get_data(self):
         return self.element
