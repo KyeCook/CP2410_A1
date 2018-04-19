@@ -6,14 +6,14 @@ Sets/gets elements from SparseArray with varying sizes, values of n and a changi
 **** NB MemoryError prevents tests > m^9  ****
 """
 
-
 from SparseArray import SparseArray
 import random
 from time import clock
+
 for q in range(3,13):
     print("")
     n = 10**q
-    print("n: " + n)
+    print("n: " + str(n))
     array = SparseArray(n)
     Ms = []
     for f in range(0,q):
@@ -21,7 +21,7 @@ for q in range(3,13):
             Ms.append(10 ** f)
 
     for m in Ms:
-        print("m: " + m)
+        print("m: " + str(m))
         for m in range(1, m):
             num = random.randint(0, n-1)
             array[num] = 3
